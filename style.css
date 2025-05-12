@@ -1,6 +1,4 @@
-<style>
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
-</style>
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700;900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 
 html {
     box-sizing: border-box;
@@ -28,11 +26,15 @@ img {
 }
 
 h1 {
-    32px;
+    font-size: 32px;
 }
 
 h2 {
-    24px;
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 20px;
 }
 
 .header {
@@ -43,61 +45,176 @@ h2 {
 }
 
 header, section {
-    max-width: 1100px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 60px;
 }
 
 .header a {
-    color: #CBD5E1;
+    color: #E2E8F0; /*
+    #CBD5E1;*/
     font-size: 20px;
+    text-decoration: none;
+    font-weight: 700;
 }
 
 .header a:hover {
-    color: #2DD4BF;
-    font-size: 20px;
+    color: #94A3B8;
+    text-decoration: underline;
 }
 
 .header ul {
     display: flex;
     justify-content: space-between;
-    gap: 12px;
+    gap: 20px;
     list-style-type: none;
-}
-
-.container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 48px;
 }
 
 .hero {
     color: #F9FAFB;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 48px;
+    max-width: 1100px;
 }
 
 .hero img {
-    max-width: 450px;
+    max-width: 500px;
+    border-radius: 10px;
 }
 
-.information {
-    flex-direction: column;
+.hero * {
+    margin: 10px;
+}
+
+.hero button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #0284C7;
+    font-weight: 700;
+    color: #F9FAFB;
+}
+
+.hero button:hover {
+    background-color: #2563EB; 
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.7);
+}
+.destinations h2 {
+text-align: center;
+}
+
+.destinations, .call-to-action {
     color: #1E293B;
     background-color: #FFFFFF;
+    padding: 20px;
 }
-.information img {
-    max-width: 150px;
+.destinations img {
+    max-width: 250px;
 }
 .card-container {
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
+    justify-content: space-around;
     align-content: flex-start;
+    align-items: stretch;
     flex-wrap: wrap;
     gap: 10px;
+    margin: 20px auto;
 }
 .card {
-    max-width: 200px;
-    padding: 10px;
+    padding: 20px;
+    display: block;
+    text-align: left;
+    max-width: 300px;
+    border-radius: 8px;
+    border: rgb(208, 239, 255) solid 5px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
+.card:hover {
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+    transform: scale(1.02);
+}
+
+.card h3 {
+    font-size: 18px;
+    padding: 5px;
+}
+.card p {
+    font-size: 15px;
+    padding: 5px;
+}
+.card img {
+    border-radius: 8px;
+    padding: 5px;
+}
+.testimonials {
+    background-color: #E2E8F0;
+    color: #334155;
+    padding: 48px;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.testimonials div {
+    max-width: 800px;
+    margin: 20px auto;
+}
+blockquote p {
+    text-align: left;
+    font-family: 'Cinzel Decorative', san-serif;
+    font-size: larger;
+    
+}
+blockquote i {
+    padding: 10px;
+}
+.testimonials p.source {
+   text-align: right; 
+}
+
+.call-to-action .container {
+    display: flex;
+    justify-content: space-between;
+    max-width: 900px;
+    padding: 30px 48px;
+    margin: 20px auto;
+    background-color: #d0efff;
+    /*#0EA5E9;*/
+    color: #0F172A;
+    border-radius: 5px;
+    font-family: Roboto, sans-serif;
+}
+
+.call-to-action h2, .call-to-action p {
+    text-align: left;
+    padding: 5px;
+}
+
+.call-to-action .sign-up-button {
+    flex-basis: 70%;
+    display: flex;
+    justify-content: end;
+    align-items: center;}
+
+.call-to-action button {
+    padding: 10px;
+    font-size: 18px;
+    border-radius: 5px;
+    background-color: #F9FAFB;
+    font-weight: 700;
+    color: #0284C7;
+}
+.call-to-action button:hover {
+    background-color: #F8D57E;
+    color: #0F172A;
+    box-shadow: 0 4px 10px rgba(37, 99, 235, 0.7);
+}
+
+footer {
+    text-align: center;
+    padding: 30px;
+}
